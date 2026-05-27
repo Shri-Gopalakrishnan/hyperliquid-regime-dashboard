@@ -460,7 +460,8 @@ def plot_funding_regimes(df: pd.DataFrame, regimes: np.ndarray,
         legend=dict(
             bgcolor='#161b22',
             bordercolor='#30363d',
-            borderwidth=1
+            borderwidth=1,
+            font=dict(color='#c9d1d9', size=13)
         ),
         margin=dict(l=60, r=40, t=60, b=40),
         xaxis2=dict(
@@ -508,7 +509,7 @@ def plot_regime_distribution(df: pd.DataFrame, regimes: np.ndarray,
         paper_bgcolor='#0d1117',
         plot_bgcolor='#161b22',
         font=dict(color='#c9d1d9'),
-        legend=dict(bgcolor='#161b22', bordercolor='#30363d', borderwidth=1),
+        legend=dict(bgcolor='#161b22', bordercolor='#30363d', borderwidth=1, font=dict(color='#c9d1d9', size=13)),
         height=350,
         margin=dict(l=60, r=40, t=50, b=50)
     )
@@ -558,7 +559,7 @@ def plot_reversion_scatter(reg_result: dict) -> go.Figure:
         paper_bgcolor='#0d1117',
         plot_bgcolor='#161b22',
         font=dict(color='#c9d1d9'),
-        legend=dict(bgcolor='#161b22', bordercolor='#30363d', borderwidth=1),
+        legend=dict(bgcolor='#161b22', bordercolor='#30363d', borderwidth=1, font=dict(color='#c9d1d9', size=13)),
         height=350,
         margin=dict(l=60, r=40, t=50, b=50)
     )
